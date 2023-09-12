@@ -48,7 +48,7 @@
       };
       </script>
   </head>
-  <body class=>
+  <body class="relative">
     
     <!-- ! Start of the Header Section -->
     <header
@@ -108,31 +108,35 @@
     <!-- !! End of the Header Section -->
     
     <!-- ! Start of the First middle Sectoin -->
-    <section class="h-[130vh] first-section text-primary-veryDarkBlue font-Overpass relative overflow-hidden">
+    <section class="z-50 first-section text-primary-veryDarkBlue font-Overpass relative overflow-hidden">
       <!-- ? Title of the section -->
-      <h1 class="text-5xl mb-20 mt-[4.5rem] font-[700] tracking-[-0.08rem] text-center">Designed for the future</h1>
+      <h1 class="text-5xl mt-[4.5rem] font-[700] tracking-[-0.08rem] text-center">Designed for the future</h1>
       
       <!-- *photo of the section -->
 
-      <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class="scale-[.8] absolute -z-10 left-1/2 -top-1/2 translate-y-[38%]">
+      <div class="container-div grid grid-flow-col grid-cols-2 w-full h-fit">
+        <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class=" relative left-[20%] order-2">
+
+        <div class=" self-center ps-20 articles">
+          <div class="mb-20">
+            <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Introduction an extensible editor</h2>
+            <p class=>
+              Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+            </p>
+          </div>
+          <!-- ? Second article of the Section -->
+          <div>
+            <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Robust content management</h2>
+            <p class=>
+              Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
+            </p>
+          </div>
+        </div>
+      </div>
       
       <!-- ? First article of the Section -->
 
-      <div class="px-20 articles">
-        <div class="mb-20">
-          <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Introduction an extensible editor</h2>
-          <p class="w-1/2">
-            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
-          </p>
-        </div>
-        <!-- ? Second article of the Section -->
-        <div>
-          <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Robust content management</h2>
-          <p class="w-1/2">
-            Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
-          </p>
-        </div>
-      </div>
+      
     </section>
     <!-- ! End of the First middle Sectoin -->
 
@@ -140,19 +144,21 @@
     <!-- ! Start of the Second Middle Section -->
 
     <!-- ? Phones Photo -->
-    <img src="images/illustration-phones.svg" alt="illustration-phones" class="scale-[.85] absolute z-30 top-[1110px] left-[55px]">
-    <section class=" rounded-bl-[6rem] px-32 rounded-tr-[6rem] relative font-Overpass bg-gradient-to-r h-[55vh] text-white from-Gradient-veryDarkGrayBlue to-Gradient-veryDarkDesaturatedBlue overflow-hidden">
+    <img src="images/illustration-phones.svg" alt="illustration-phones" class=" absolute left-[7%] z-30">
+    <section class=" mt-10 rounded-bl-[6rem] overflow-hidden h-[400px] px-32 rounded-tr-[6rem] relative font-Overpass bg-gradient-to-r text-white from-Gradient-veryDarkGrayBlue to-Gradient-veryDarkDesaturatedBlue">
+      <img src="images/bg-pattern-circles.svg" alt="bg-pattern-circles" class="absolute z-0 -left-[10%] scale-[1.2] -top-[130%]">
       <!-- ? Pattern Photo -->
-      <img src="images/bg-pattern-circles.svg" alt="bg-pattern-circles" class="absolute scale-[.9] z-10 -left-[19%] -top-[160%]">
       
-      <!-- ? Text in the Second Middle section -->
-      <div class="relative w-1/2 z-50 left-1/2 top-1/2 -translate-y-1/2">
-        <h2 class="text-4xl mb-4 font-[500] tracking-[-0.06rem]">
-          State of the Art Infrastructure 
-        </h2>
-        <p class="text-sm font-[200]">
-          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-        </p>
+      <div class="container-box flex justify-end items-center gap-20 h-full">
+              <!-- ? Text in the Second Middle section -->
+              <div class="w-1/2 z-50">
+                <h2 class="text-4xl mb-4 font-[500] tracking-[-0.06rem]">
+                  State of the Art Infrastructure 
+                </h2>
+                <p class="text-sm font-[200]">
+                  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                </p>
+              </div>
       </div>
     </section>
     
@@ -161,28 +167,32 @@
 
 
     <!-- ! Start of the Third Middle Section -->
-    <section class="px-32 h-[154vh] first-section  text-primary-veryDarkBlue font-Overpass relative overflow-hidden">      
+    <section class=" first-section  text-primary-veryDarkBlue font-Overpass relative overflow-hidden">      
       <!-- *photo of the section -->
 
-      <img src="images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop" class="scale-[.83] absolute -z-10 -top-1/2 translate-y-[70%] -left-[315px]">
-      
-      <!-- ? First article of the Section -->
 
-      <div class="articles relative left-1/2 top-1/2 -translate-y-1/2">
-        <div class="mb-24">
-          <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Introduction an extensible editor</h2>
-          <p class="w-1/2">
-            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
-          </p>
-        </div>
-        <!-- ? Second article of the Section -->
-        <div>
-          <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Robust content management</h2>
-          <p class="w-1/2">
-            Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
-          </p>
+      <div class="py-40 container-box grid grid-flow-col grid-cols-2 justify-center items-center">
+        <img src="images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop" class=" -z-10">
+        
+        <!-- ? First article of the Section -->
+  
+        <div class="articles pe-32">
+          <div class="mb-24">
+            <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Introduction an extensible editor</h2>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+            </p>
+          </div>
+          <!-- ? Second article of the Section -->
+          <div>
+            <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Robust content management</h2>
+            <p>
+              Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
+            </p>
+          </div>
         </div>
       </div>
+
     </section>
     
     
