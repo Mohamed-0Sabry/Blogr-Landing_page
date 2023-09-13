@@ -51,6 +51,50 @@
   <body class="relative">
     
     <!-- ! Start of the Header Section -->
+    <div id="dropdownList" class="dropDown hidden z-[500] absolute bg-white text-primary-veryDarkBlue font-Overpass top-[130px] py-10 px-6 w-[91%] rounded-md right-[4.5%] shadow-lg shadow-[#341b1b9f]">
+
+      <ul class=" gap-7 text-primary-veryDarkBlue text-xl grid text-center font-[700]">
+        <li class="w-full">
+          <span id="listitems1" class="w-full peer" >Product</span>
+          <i class="mt-1 text-primary-lightRed peer-hover:rotate-180  transition-all duration-[400ms] scale-[60%] fa-solid fa-chevron-down"></i>
+          <ul id="listItself1" class="bg-Neutral-grayishBlue/50 hidden text-primary-veryDarkBlue/50 flex flex-col gap-5 w-full py-5 mt-5">
+            <li class="hover:text-primary-lightRed">Overview</li>
+            <li class="hover:text-primary-lightRed">Pricing</li>
+            <li class="hover:text-primary-lightRed">Marketplace</li>
+            <li class="hover:text-primary-lightRed">Features</li>
+            <li class="hover:text-primary-lightRed">Integrations</li>
+          </ul>
+        </li>
+        <li class="w-full">
+          <span id="listitems2" class="w-full">Company</span>
+          <i class="mt-1 scale-[60%] fa-solid text-primary-lightRed fa-chevron-down"></i>
+          <ul id="listItself2" class="bg-Neutral-grayishBlue/50 hidden text-primary-veryDarkBlue/50 flex flex-col gap-5 w-full py-5 mt-5">
+            <li class="hover:text-primary-lightRed">About</li>
+            <li class="hover:text-primary-lightRed">Team</li>
+            <li class="hover:text-primary-lightRed">Blog</li>
+            <li class="hover:text-primary-lightRed">Carrers</li>
+          </ul>
+        </li>
+        <li class="w-full">
+          <span id="listitems3" class="w-full">Connect</span>
+          <i class="mt-1 scale-[60%] fa-solid text-primary-lightRed fa-chevron-down"></i>
+          <ul id="listItself3" class="bg-Neutral-grayishBlue/50 hidden text-primary-veryDarkBlue/50 flex flex-col gap-5 w-full py-5 mt-5">
+            <li class="hover:text-primary-lightRed">Contact</li>
+            <li class="hover:text-primary-lightRed">Newsletter</li>
+            <li class="hover:text-primary-lightRed">LinkedIn</li>
+          </ul>
+        </li>
+      </ul>
+      <hr class="mt-7 bg-Neutral-grayishBlue">
+      <div class="mt-7 z-50 place-self-center flex gap-5 flex-col justify-center login-signup">
+        <button class=" font-[700] text-lg text-primary-veryDarkBlue hover:underline-offset-2 hover:underline" type="button" role="button">
+          Login
+        </button>
+        <button type="button" role="button" class="bg-gradient-to-l from-Gradient-lightRed to-Gradient-veryLightRed self-center rounded-full py-3 px-8 font-bold text-Neutral-white transition-all duration-200 shadow-lg hover:bg-black">
+          Sign Up
+        </button>
+      </div>
+    </div>
     <header
     class="text-white w-full py-10 px-5 md:px-10 lg:px-20 shadow-inner  overflow-hidden relative h-[70vh] bg-gradient-to-r from-Gradient-veryLightRed from-10% to-Gradient-lightRed to-90% rounded-bl-[4rem]"
     >
@@ -60,13 +104,44 @@
       <a href="#" class="cursor-pointer z-50">
         <img src="images/logo.svg" alt="icon-hamburger" class="z-50"/>
       </a>
-      <a href="#" class="hidden max-lg:block z-50">
+      <a href="#" id="dropdown" class="toggle_btn peer hidden max-lg:block z-50">
         <img src="images/icon-hamburger.svg" alt="icon-hamburger">
       </a>
-      <ul class="flex gap-8 z-50 items-center max-lg:hidden">
-        <li class="cursor-pointer group text-[14px] flex items-center gap-1"><span class="hover:underline-offset-2 group-hover:underline">Product</span> <i class="mt-1 scale-[60%] fa-solid fa-chevron-down"></i></li>
-        <li class="cursor-pointer group text-[14px] flex items-center gap-1"><span class="hover:underline-offset-2 group-hover:underline">Company</span> <i class="mt-1 scale-[60%] fa-solid fa-chevron-down"></i></li>
-        <li class="cursor-pointer group text-[14px] flex items-center gap-1"><span class="hover:underline-offset-2 group-hover:underline font-Ubunto">Connect</span> <i class="mt-1 scale-[60%] fa-solid fa-chevron-down"></i></li>
+
+
+      <ul class="relative flex gap-8 z-50 items-center max-lg:hidden">
+        <li class="group cursor-pointer group text-[14px] flex items-center gap-1">
+          <span class="hover:underline-offset-2 hover:underline">Product</span>
+          <i class="mt-1 scale-[60%] fa-solid fa-chevron-down group-hover:rotate-180 transition-all duration-[400ms]"></i>
+          <ul class="group-hover:opacity-100 invisible group-hover:visible flex mt-6 transition-all duration-[400ms] opacity-0  gap-3 flex-col absolute top-1/2 p-6 hover:no-underline w-[50%] pe-10 rounded-md shadow-md shadow-[#522d2d] -left-6 bg-white text-black">
+            <li class="hover:font-semibold cursor-pointer">Overview</li>
+            <li class="hover:font-bold cursor-pointer">Pricing</li>
+            <li class="hover:font-bold cursor-pointer">Marketplace</li>
+            <li class="hover:font-bold cursor-pointer">Features</li>
+            <li class="hover:font-semibold cursor-pointer">Integrations</li>
+          </ul>  
+        </li>
+        
+        <li class="group cursor-pointer group text-[14px] flex items-center gap-1">
+          <span class="hover:underline-offset-2 group-hover:underline">Company</span> 
+          <i class="mt-1 scale-[60%] fa-solid fa-chevron-down group-hover:rotate-180 transition-all duration-[400ms]"></i>
+          <ul class="group-hover:opacity-100 invisible group-hover:visible flex mt-6 transition-all duration-[400ms] opacity-0  gap-3 flex-col absolute top-1/2 p-6 hover:no-underline w-[50%] rounded-md shadow-md -translate-x-6 shadow-[#522d2d] bg-white text-black">
+            <li class="hover:font-semibold cursor-pointer">About</li>
+            <li class="hover:font-bold cursor-pointer">Team</li>
+            <li class="hover:font-bold cursor-pointer">Blog</li>
+            <li class="hover:font-bold cursor-pointer">Careers</li>
+          </ul>  
+        
+        </li>
+          <li class=" group cursor-pointer group text-[14px] flex items-center gap-1">
+            <span class="hover:underline-offset-2 group-hover:underline font-Ubunto">Connect</span>
+            <i class="mt-1 scale-[60%] fa-solid fa-chevron-down group-hover:rotate-180 transition-all duration-[400ms]"></i>
+            <ul class="group-hover:opacity-100 invisible group-hover:visible flex mt-6 transition-all duration-[400ms] opacity-0  gap-3 flex-col absolute top-1/2 left-[66%] p-6 hover:no-underline w-[50%] pe-10 rounded-md shadow-md shadow-[#522d2d] bg-white text-black">
+              <li class="hover:font-semibold cursor-pointer">Contact</li>
+              <li class="hover:font-bold cursor-pointer">Newsletter</li>
+              <li class="hover:font-bold cursor-pointer">LinkedIn</li>
+            </ul> 
+          </li>
       </ul>
       <div class="max-lg:hidden text-[.8rem] z-50 flex-1 flex justify-end gap-5 login-signup">
         <button class=" hover:underline-offset-2 hover:underline" type="button" role="button">
@@ -245,5 +320,33 @@
 
 
 
+    
+    <script>
+      const listitems1 = document.querySelector('#listitems1');
+      const listItself1 = document.querySelector('#listItself1');
+      const listitems2 = document.querySelector('#listitems2');
+      const listItself2 = document.querySelector('#listItself2');
+      const listitems3 = document.querySelector('#listitems3');
+      const listItself3 = document.querySelector('#listItself3');
+      const dropdownButton = document.querySelector("#dropdown");
+      const dropdownList = document.querySelector("#dropdownList");
+      dropdownButton.addEventListener("click", () => {
+  dropdownList.classList.toggle("hidden");
+});
+
+listitems1.addEventListener("click", () => {
+  listItself1.classList.toggle("hidden");
+});
+listitems2.addEventListener("click", () => {
+  listItself2.classList.toggle("hidden");
+});
+listitems3.addEventListener("click", () => {
+  listItself3.classList.toggle("hidden");
+});
+
+
+
+
+    </script>
   </body>
 </html>
