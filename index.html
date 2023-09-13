@@ -68,11 +68,11 @@
         <li class="cursor-pointer group text-[14px] flex items-center gap-1"><span class="hover:underline-offset-2 group-hover:underline">Company</span> <i class="mt-1 scale-[60%] fa-solid fa-chevron-down"></i></li>
         <li class="cursor-pointer group text-[14px] flex items-center gap-1"><span class="hover:underline-offset-2 group-hover:underline font-Ubunto">Connect</span> <i class="mt-1 scale-[60%] fa-solid fa-chevron-down"></i></li>
       </ul>
-      <div class="max-lg:hidden z-50 flex-1 flex justify-end gap-5 login-signup">
-        <button class="text-[14px] hover:underline-offset-2 hover:underline" type="button" role="button">
+      <div class="max-lg:hidden text-[20px] z-50 flex-1 flex justify-end gap-5 login-signup">
+        <button class=" hover:underline-offset-2 hover:underline" type="button" role="button">
           Login
         </button>
-        <button type="button" role="button" class="bg-white rounded-full py-3 px-8 text-[14px] font-bold text-primary-lightRed transition-all duration-200 shadow-lg hover:bg-[rgba(255,255,255,0.5)] hover:text-white">
+        <button type="button" role="button" class="bg-white rounded-full py-3 px-8 font-bold text-primary-lightRed transition-all duration-200 shadow-lg hover:bg-[rgba(255,255,255,0.5)] hover:text-white">
           Sign Up
         </button>
       </div>
@@ -83,25 +83,26 @@
     <!-- ! line space -->
     
     <!-- ? Start of the Middle Section of the Header -->
-    <img src="images/bg-pattern-intro-desktop.svg" alt="bg-pattern-intro-desktop" class="scale-[185%] absolute -top-[110%] left-[16%] z-10">
-    <section class="intro relative z-30 text-center top-1/2 -translate-y-1/2">
-        <p class="font-Overpass tracking-[-0.10rem] font-[400] text-[6vw] lg:text-6xl">A modern publishing platform</p>
-        <p class="font-Overpass font-[300] mt-3">Grow your audience and build your online brand</p>
-        <div class="mt-6 the-two-buttons flex justify-center gap-3">
-          <button type="button" role="button" class="shadow-lg bg-white rounded-full py-3 px-8 text-[14px] font-bold text-primary-lightRed transition-all duration-200 hover:bg-[rgba(255,255,255,0.5)] hover:text-white">
+    <img src="images/bg-pattern-intro-desktop.svg" alt="bg-pattern-intro-desktop" class="hidden lg:block scale-[185%] absolute -top-[110%] left-[16%] z-10">
+    <img src="images/bg-pattern-intro-mobile.svg" alt="bg-pattern-intro-mobile" class="hidden absolute scale-[280%]  md:scale-[230%] top-24 md:top-1 max-lg:block">
+    <section class="intro relative flex flex-col z-30 text-center top-1/2 -translate-y-1/2">
+        <p class="text-[50px] font-Overpass tracking-[-0.10rem] font-[500] lg:text-6xl">A modern publishing platform</p>
+        <p class="font-Overpass text-2xl font-[300] mt-3">Grow your audience and build your online brand</p>
+        <div class="mt-8 font-Ubunto mb-14 text-[3vw] md:text-[2.7vw] lg:text-[27px] the-two-buttons flex justify-center gap-3">
+          <button type="button" role="button" class="shadow-lg  bg-white rounded-full py-3 px-8 font-bold text-primary-lightRed transition-all duration-200 hover:bg-[rgba(255,255,255,0.5)] hover:text-white">
             Start for Free
           </button>
-          <button type="button" role="button" class="bg-transparent rounded-full py-3 px-8 text-[14px] font-bold text-white border-[1.5px] border-solid transition-all duration-200 hover:bg-white hover:text-primary-veryLightRed">
+          <button type="button" role="button" class="bg-transparent rounded-full py-3 px-8 font-bold text-white border-[1.5px] border-solid transition-all duration-200 hover:bg-white hover:text-primary-veryLightRed">
             Learn More
           </button>
         </div>
         
-        <!-- ? End of the Middle Section of the Header -->
-        
-        <div class="attribution absolute left-1/2 -translate-x-1/2 top-[200px]">
+        <div class="attribution relative mt-6">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener" title="frontendmentor" class="inline border-r-2 border-primary-veryDarkBlue hover:text-primary-veryDarkBlue">Frontend Mentor </a>
           <span class="ml-1">Coded by</span> <a href="https://www.linkedin.com/in/mohamed-sabry-eng/" target="_blank" rel="noopener" class="underline hover:text-primary-veryDarkBlue">Mohamed Sabry.</a>
+        <!-- ? End of the Middle Section of the Header -->
+        
       </section>
     </header>
     
@@ -110,14 +111,15 @@
     <!-- ! Start of the First middle Sectoin -->
     <section class="z-50 first-section text-primary-veryDarkBlue font-Overpass relative overflow-hidden">
       <!-- ? Title of the section -->
-      <h1 class="text-5xl mt-[4.5rem] font-[700] tracking-[-0.08rem] text-center">Designed for the future</h1>
+      <h1 class="text-5xl my-[6rem] lg:mt-[4.5rem] font-[700] tracking-[-0.08rem] text-center">Designed for the future</h1>
       
       <!-- *photo of the section -->
 
-      <div class="container-div grid grid-flow-col grid-cols-2 w-full h-fit">
-        <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class=" relative left-[20%] order-2">
+      <div class="container-div text-center lg:text-start grid  grid-flow-row lg:grid lg:grid-flow-col lg:grid-cols-2 w-full h-fit">
+        <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class=" relative hidden lg:block left-[20%] lg:order-2">
+        <img src="images/illustration-editor-mobile.svg" alt="illustration-editor-mobile" class="scale-125 mb-10 lg:hidden relative place-self-center">
 
-        <div class=" self-center ps-20 articles">
+        <div class=" self-center p-10 lg:ps-20 articles">
           <div class="mb-20">
             <h2 class="text-3xl mb-4 font-[500] tracking-[-0.08rem]">Introduction an extensible editor</h2>
             <p class=>
